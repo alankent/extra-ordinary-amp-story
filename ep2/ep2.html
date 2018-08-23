@@ -55,6 +55,12 @@
         background-color: #000;
         line-height: 2em;
       }
+      .image-fit {
+        object-fit: contain;
+      }
+      #covor {
+        background-color: purple;
+      }
     </style>
   </head>
   <body>
@@ -65,7 +71,7 @@
         publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
         poster-portrait-src="Ep2_-_Good_Thoughts-page-001.jpg">
       <amp-story-page id="cover">
-        <amp-story-grid-layer template="vertical">
+        <amp-story-grid-layer template="vertical" class="noedge">
           <amp-img src="Ep2_-_Good_Thoughts-page-001.jpg"
               width="994" height="1538"
               layout="responsive">
@@ -74,16 +80,16 @@
       </amp-story-page>
 
       <amp-story-page id="page2">
-        <amp-story-grid-layer template="vertical">
+        <amp-story-grid-layer template="vertical" class="noedge">
           <amp-img src="Ep2_-_Good_Thoughts-page-002.jpg"
               width="994" height="1538"
-              layout="responsive">
+              layout="responsive" class="image-fit">
           </amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
 
       <amp-story-page id="page3">
-        <amp-story-grid-layer template="vertical">
+        <amp-story-grid-layer template="vertical" class="noedge">
           <amp-img src="Ep2_-_Good_Thoughts-page-003.jpg"
               width="994" height="1538"
               layout="responsive">
@@ -92,7 +98,7 @@
       </amp-story-page>
 
       <amp-story-page id="page4">
-        <amp-story-grid-layer template="fill">
+        <amp-story-grid-layer template="fill" class="noedge">
           <amp-img src="Ep2_-_Good_Thoughts-page-004.jpg"
               width="994" height="1538"
               layout="responsive">
@@ -101,7 +107,7 @@
       </amp-story-page>
 
       <amp-story-page id="page5">
-        <amp-story-grid-layer template="vertical">
+        <amp-story-grid-layer template="vertical" class="noedge">
           <amp-img src="Ep2_-_Good_Thoughts-page-005.jpg"
               width="994" height="1538"
               layout="responsive">
